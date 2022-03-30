@@ -18,6 +18,6 @@ public class Constants {
     public static final int BLACK_FRIDAY_DISCOUNTS = 2;
     public static final int FILTER_BY_GENRE = 3;
     public static final int FILTER_BY_TITLE = 4;
-    public static final int FILTER_BY_ARTIST = 4;
+    public static final int FILTER_BY_ARTIST = 5;
     public static final String DATE_FORMAT = "yyyy-MM-dd";
 }

@@ -42,37 +42,37 @@ public class UserInteraction implements UserInteractionInterface {
                         break;
                 }
                 break;
-//            case Constants.VIEW_REPORTS:
-//                switch (chooseViewReportsAction()) {
-//                    case Constants.NEW_YEAR_DISCOUNT:
-//                        Double primeCost = menuOptionsMethods.getPrimeCost();
-//                        Double newYearDiscount = menuAction.newYearDiscount(primeCost);
-//                        System.out.println("Reducerea de Anul Nou este "+newYearDiscount);
-//                        break;
-//                    case Constants.BLACK_FRIDAY_DISCOUNTS:
-//                        Double primeCostBF = menuOptionsMethods.getPrimeCost();
-//                        Double blackfridayDiscount = menuAction.blackFridayDiscount(primeCost);
-//                        System.out.println("Reducerea de Black Friday este "+blackfridayDiscount);
-//                        break;
-//                    case Constants.FILTER_BY_GENRE:
-//                        System.out.println("Sortare dupa gen ");
-//                        Genre genre=menuOptionsMethods.getGenre();
-//                        System.out.println(menuAction.filteredComicBooksByGenre(Genre genre));
-//                        break;
-//                    case Constants.FILTER_BY_TITLE:
-//                        System.out.println("Sortare dupa titlu ");
-//                        Title title=menuOptionsMethods.getTitle();
-//                        System.out.println(menuAction.filteredComicBooksByTitle(Title title));
-//                        break;
-//                    case Constants.FILTER_BY_ARTIST:
-//                        System.out.println("Sortare dupa autor ");
-//                        Artist artist=menuOptionsMethods.getArtist();
-//                        System.out.println(menuAction.filteredComicBooksByArtist(Artist artist));
-//                        break;
-//                    case Constants.RETURN_TO_MENU:
-//                        initInteraction();
-//                }
-//                break;
+            case Constants.VIEW_REPORTS:
+                switch (chooseViewReportsAction()) {
+                    case Constants.NEW_YEAR_DISCOUNT:
+                        Double primeCost = menuOptionsMethods.getPrimeCost();
+                        Double newYearDiscount = menuAction.newYearDiscount(primeCost);
+                        System.out.println("Reducerea de Anul Nou este "+newYearDiscount);
+                        break;
+                    case Constants.BLACK_FRIDAY_DISCOUNTS:
+                        Double primeCostBF = menuOptionsMethods.getPrimeCost();
+                        Double blackfridayDiscount = menuAction.blackFridayDiscount(primeCostBF);
+                        System.out.println("Reducerea de Black Friday este "+blackfridayDiscount);
+                        break;
+                    case Constants.FILTER_BY_GENRE:
+                        System.out.println("Sortare dupa gen ");
+                        Genre genre=menuOptionsMethods.getGenre();
+                        System.out.println(menuAction.filteredComicBooksByGenre(genre));
+                        break;
+                    case Constants.FILTER_BY_TITLE:
+                        System.out.println("Sortare dupa titlu ");
+                        Title title=menuOptionsMethods.getTitle();
+                        System.out.println(menuAction.filteredComicBooksByTitle(title));
+                        break;
+                    case Constants.FILTER_BY_ARTIST:
+                        System.out.println("Sortare dupa autor ");
+                        Artist artist=menuOptionsMethods.getArtist();
+                        System.out.println(menuAction.filteredComicBooksByArtist(artist));
+                        break;
+                    case Constants.RETURN_TO_MENU:
+                        initInteraction();
+                }
+                break;
         }
         initInteraction();
     }
