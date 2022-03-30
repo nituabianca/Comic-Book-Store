@@ -1,7 +1,14 @@
 package main;
 
+
+import java.io.FileReader;
 import java.util.Scanner;
 
+
+import login.Auth;
+import login.AuthInterface;
+import service.UserInteraction;
+import service.UserInteractionInterface;
 import beans.ComicBook;
 
 public class RunMe 
@@ -9,12 +16,10 @@ public class RunMe
 
 	public static void main(String[] args) throws Exception 
 	{
-		Scanner sc=new Scanner(System.in);
-		
-		ComicBook cb=new ComicBook("W", "Lee JonSuk", "Park Hoon", 1039, "Drama", 2013, 20.06, 18.00, true);
-		
-		System.out.println(cb);
-		
+		AuthInterface auth = new Auth();
+        auth.authenticate();
+        UserInteractionInterface userInteractionService = new UserInteraction();
+        userInteractionService.initInteraction();
 	}
 
 }
